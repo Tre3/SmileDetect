@@ -14,6 +14,8 @@
 		F7239EF71EE41C4400F8CA39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7239EF51EE41C4400F8CA39 /* LaunchScreen.storyboard */; };
 		F7239F021EE41C4400F8CA39 /* VoRkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7239F011EE41C4400F8CA39 /* VoRkTests.swift */; };
 		F7239F0D1EE41C4400F8CA39 /* VoRkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7239F0C1EE41C4400F8CA39 /* VoRkUITests.swift */; };
+		F7C12A3A1EF90D23008E917A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C12A391EF90D23008E917A /* AVFoundation.framework */; };
+		F7C12A3C1EF90D61008E917A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C12A3B1EF90D61008E917A /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F7239F081EE41C4400F8CA39 /* VoRkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoRkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7239F0C1EE41C4400F8CA39 /* VoRkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoRkUITests.swift; sourceTree = "<group>"; };
 		F7239F0E1EE41C4400F8CA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C12A391EF90D23008E917A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F7C12A3B1EF90D61008E917A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C12A3C1EF90D61008E917A /* CoreVideo.framework in Frameworks */,
+				F7C12A3A1EF90D23008E917A /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 				F7239F001EE41C4400F8CA39 /* VoRkTests */,
 				F7239F0B1EE41C4400F8CA39 /* VoRkUITests */,
 				F7239EEA1EE41C4400F8CA39 /* Products */,
+				F7C12A381EF90D23008E917A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +130,15 @@
 				F7239F0E1EE41C4400F8CA39 /* Info.plist */,
 			);
 			path = VoRkUITests;
+			sourceTree = "<group>";
+		};
+		F7C12A381EF90D23008E917A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7C12A3B1EF90D61008E917A /* CoreVideo.framework */,
+				F7C12A391EF90D23008E917A /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +532,7 @@
 				F7239F131EE41C4400F8CA39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7239F141EE41C4400F8CA39 /* Build configuration list for PBXNativeTarget "VoRkTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +541,7 @@
 				F7239F161EE41C4400F8CA39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7239F171EE41C4400F8CA39 /* Build configuration list for PBXNativeTarget "VoRkUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +550,7 @@
 				F7239F191EE41C4400F8CA39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
